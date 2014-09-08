@@ -132,6 +132,7 @@ public class Network {
 		Network GfromInput = new Network(input,",");
 		
 		AverageDegree Ad=new AverageDegree();
+		System.out.println();
 		avmap= Ad.analyze(GfromInput); 
 		for (Iterator<String> iterator = avmap.keySet().iterator(); iterator.hasNext();) {
 		    String key = (String) iterator.next();
@@ -140,10 +141,12 @@ public class Network {
 		}
 		
 		NodeDegree ND = new NodeDegree();
+		System.out.println();
 		ndmap=ND.analyze(GfromInput);
 	
 		
 		AveDegNode AVD = new AveDegNode();
+		System.out.println();
 		avdmap=AVD.analyze(GfromInput);
 	
 		ClusterringCoef CC  = new ClusterringCoef();
